@@ -1,9 +1,35 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<iostream>
 
-int main()
+using namespace std;
+
+class programming
 {
+   private:
+      int variable;
 
-printf("Buna ziua");
-return 0;getch();
+   public:
+
+      void input_value()
+      {
+         cout << "In function input_value, Enter an integer\n";
+         cin >> variable;
+      }
+
+      void output_value()
+      {
+         cout << "Variable entered is ";
+         cout << variable << "\n";
+      }
+};
+
+main()
+{
+   programming object;
+
+   object.input_value();
+   object.output_value();
+
+   //object.variable;  Will produce an error because variable is private
+
+   return 0;
 }
