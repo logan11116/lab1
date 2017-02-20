@@ -1,35 +1,15 @@
-#include<iostream>
-
-using namespace std;
-
-class programming
+#include <stdio.h>
+int main()
 {
-   private:
-      int variable;
+    int number;
 
-   public:
+    // printf() dislpays the formatted output
+    printf("Enter an integer: ");
 
-      void input_value()
-      {
-         cout << "In function input_value, Enter an integer\n";
-         cin >> variable;
-      }
+    // scanf() reads the formatted input and stores them
+    scanf("%d", &number);
 
-      void output_value()
-      {
-         cout << "Variable entered is ";
-         cout << variable << "\n";
-      }
-};
-
-main()
-{
-   programming object;
-
-   object.input_value();
-   object.output_value();
-
-   //object.variable;  Will produce an error because variable is private
-
-   return 0;
+    // printf() displays the formatted output
+    printf("You entered: %d", number);
+    return 0;
 }
